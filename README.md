@@ -4,7 +4,7 @@
 
 # practicing-grpc-client-golang #
 
-Practicing GRPC Client using Golang (Gin Gonic Framework) as Programming Language. This is client implementation from [https://github.com/moemoe89/practicing-grpc-server-golang](https://github.com/moemoe89/practicing-grpc-server-golang) 
+Practicing GRPC Client using Golang as Programming Language. This is client implementation from [https://github.com/moemoe89/practicing-grpc-server-golang](https://github.com/moemoe89/practicing-grpc-server-golang) 
 
 ## Directory structure
 Your project directory structure should look like this
