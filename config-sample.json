@@ -1,0 +1,5 @@
+{
+  "run_mode": "development",
+  "port": "8794",
+  "grpc_server": "127.0.0.1:8792"
+}

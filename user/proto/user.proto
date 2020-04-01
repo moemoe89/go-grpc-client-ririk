@@ -1,0 +1,62 @@
+syntax = "proto3";
+
+package proto;
+
+import "google/protobuf/timestamp.proto";
+
+message User {
+    string id = 1;
+    string name = 2;
+    string phone = 3;
+    string email = 4;
+    string address = 5;
+    google.protobuf.Timestamp updated_at = 6;
+    google.protobuf.Timestamp created_at = 7;
+}
+
+message UserCreateReq {
+    string name = 1;
+    string phone = 2;
+    string email = 3;
+    string address = 4;
+}
+
+message UserUpdateReq {
+    string id = 1;
+    string name = 2;
+    string phone = 3;
+    string email = 4;
+    string address = 5;
+}
+
+message UserIDReq {
+    string id = 1;
+}
+
+message UsersReq {
+    string page = 1;
+    string perPage = 2;
+    string orderBy = 3;
+    string selectField = 4;
+    string name = 5;
+    string email = 6;
+    string phone = 7;
+    string createdAtStart = 8;
+    string createdAtEnd = 9;
+}
+
+message Users {
+    repeated User users = 1;
+    int64 page = 2;
+    int64 perPage = 3;
+    int64 totalPage = 4;
+    int64 totalData = 5;
+}
+
+service UserService {
+    rpc Create (UserCreateReq) returns (User);
+    rpc List (UsersReq) returns (Users);
+    rpc Detail (UserIDReq) returns (User);
+    rpc Update (UserUpdateReq) returns (User);
+    rpc Delete (UserIDReq) returns (UserIDReq);
+}
