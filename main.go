@@ -7,8 +7,8 @@
 package main
 
 import (
-	conf "github.com/moemoe89/practicing-grpc-client-golang/config"
-	"github.com/moemoe89/practicing-grpc-client-golang/user/proto"
+	conf "github.com/moemoe89/go-grpc-client-ririk/config"
+	"github.com/moemoe89/go-grpc-client-ririk/user/proto"
 
 	"context"
 	"fmt"

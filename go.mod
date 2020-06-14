@@ -1,4 +1,4 @@
-module github.com/moemoe89/practicing-grpc-client-golang
+module github.com/moemoe89/go-grpc-client-ririk
 
 go 1.13
 

@@ -50,7 +50,7 @@ inuit_rsa.pub
 *.iml
 
 # binary
-practicing-grpc-client-golang
+go-grpc-client-ririk
 app
 
 # out
